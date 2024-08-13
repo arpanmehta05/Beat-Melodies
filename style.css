@@ -538,14 +538,6 @@ img {
   font-size: 18px;
 }
 
-.movie-box a {
-  color: var(--link-color);
-}
-
-.movie-box a:hover {
-  color: var(--link-hover-color);
-}
-
 @media only screen and (max-width: 768px) {
   .movie-box {
     width: 45%;
@@ -557,3 +549,66 @@ img {
     width: 100%;
   }
 }
+
+.webseries-slideshow-container {
+  background-color: var(--muted-bg);
+  position: relative;
+  margin: auto;
+  max-width: 100%;
+  padding: 20px 8%;
+}
+
+.webseries-title {
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.song-box:hover,
+.playlist-box:hover,
+.artist-box:hover,
+.movie-box:hover,
+.series-box:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease;
+}
+
+.series-slide {
+  display: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.series-box {
+  background-color: var(--background-color);
+  color: var(--muted-text-color);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 22%;
+  text-align: center;
+}
+
+.series-box img {
+  border-radius: 10px;
+  width: 90%;
+  height: 80%;
+}
+
+.series-box p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+  .series-box {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .series-box {
+    width: 100%;
+  }
+}
+
