@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beat - Melodies</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo" id="logo">
+        <p id="menu">Beat - Melodies</p>
+      </div>
+      <div class="elemets" id="ele">
+        <a href="#home" class="scroll">Home</a>
+        <a href="#songs" class="scroll">Songs</a>
+        <a href="#movies" class="scroll">Movies</a>
+        <a href="#webSeries" class="scroll">Web Series</a>
+        <a href="#animie" class="scroll">Anime</a>
+        <a href="#comics" class="scroll">Comics</a>
+        <a href="#about" class="scroll">About</a>
+      </div>
+    </div>
+
+    <!-- sliedShow -->
+
+    <div class="slideshow-container" id="home">
+      <div class="slide fade">
+        <img
+          src="images/banner1.png"
+          style="width: 100%"
+          alt="Banner Image"
+          title="Banner"
+        />
+      </div>
+      <div class="slide fade">
+        <img
+          src="images/banner1.png"
+          style="width: 100%"
+          alt="Banner Image"
+          title="Banner"
+        />
+      </div>
+      <div class="slide fade">
+        <img
+          src="images/banner1.png"
+          style="width: 100%"
+          alt="Banner Image"
+          title="Banner"
+        />
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div class="dots-container" style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!-- music -->
+
+    <div class="songs-slideshow-container" id="songs">
+      <h1 class="songs-title"><i class="fa-solid fa-music"></i> Top Tracks</h1>
+      <div class="songs-slide fade">
+        <div class="song-box">
+          <img src="images/tauba.jpeg" alt="" />
+          <p>Tauba Tauba -Bad Newz</p>
+          <a href="">Karan Aujla</a>
+        </div>
+        <div class="song-box">
+          <img src="images/aaj ki raat.jpeg" alt="" />
+          <p>Aaj Ki Raat -Stree 2</p>
+          <a href="">Madhubanti Bagchi </a><a href="">Divya Kumar </a
+          ><a href="">Sachin -Jigar</a>
+        </div>
+        <div class="song-box">
+          <img src="images/naina.jpeg" alt="" />
+          <p>Naina - Crew</p>
+          <a href="">Diljit Dosanjh </a><a href="">Badshah</a>
+        </div>
+        <div class="song-box">
+          <img src="images/dekha tenu.jpeg" alt="" />
+          <p>Dekha Tenu - Mr. and Mrs. Mahi</p>
+          <a href="">Mohammad Faiz </a><a href="">Jaani</a>
+        </div>
+      </div>
+      <div class="songs-slide fade">
+        <div class="song-box">
+          <img src="images/Dil tu jaan tu.jpeg" alt="" />
+          <p>Dil tu Jaan Tu</p>
+          <a href="">Gurnazar </a><a href="">Chet Singh</a>
+        </div>
+        <div class="song-box">
+          <img src="images/sajni.jpeg" alt="" />
+          <p>Sajni - Laapataa Laddies</p>
+          <a href="">Arijit Singh</a>
+        </div>
+        <div class="song-box">
+          <img src="images/Mombattiye.jpeg" alt="" />
+          <p>Mombattiye</p>
+          <a href="">Diljit Dosanjh </a><a href="">Jaani</a>
+        </div>
+        <div class="song-box">
+          <img src="images/IDK HOW.jpeg" alt="" />
+          <p>IDK HOW</p>
+          <a href="">Karan Aujla</a>
+        </div>
+      </div>
+      <div class="songs-slide fade">
+        <div class="song-box">
+          <img src="images/Soulmate.jpeg" alt="" />
+          <p>Soulmate</p>
+          <a href="">BadShah </a><a href="">Arijit Singh</a>
+        </div>
+        <div class="song-box">
+          <img src="images/One Love.jpeg" alt="" />
+          <p>One Love</p>
+          <a href="">Shubh</a>
+        </div>
+        <div class="song-box">
+          <img src="images/That Girl.jpeg" alt="" />
+          <p>That Girl</p>
+          <a href="">Amrinder Gill </a><a href="">Dr jesus </a
+          ><a href="">Raj Ranjodh</a>
+        </div>
+        <div class="song-box">
+          <img src="images/Ik Number.jpeg" alt="" />
+          <p>Ik Number</p>
+          <a href="">Jasi Gill </a><a href="">Dilmaan</a>
+        </div>
+      </div>
+      <a class="prev" onclick="plusSongsSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSongsSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- playlist -->
+
+    <div class="playlist-container">
+      <h1 class="Playlists-title">
+        <i class="fa-solid fa-file-audio"></i> Top Playlists
+      </h1>
+      <div class="Playlists-slide">
+        <div class="playlist-box">
+          <img src="images/playlist1.jpeg" alt="" />
+          <p>Top 50 - Bollywood</p>
+          <a href="">Various Artists</a>
+        </div>
+        <div class="playlist-box">
+          <img src="images/playlist2.jpeg" alt="" />
+          <p>Top 50 - Punjabi</p>
+          <a href="">Various Artists</a>
+        </div>
+        <div class="playlist-box">
+          <img src="images/playlist3.jpeg" alt="" />
+          <p>Top 50 - English</p>
+          <a href="">Various Artists</a>
+        </div>
+        <div class="playlist-box">
+          <img src="images/playlist4.jpeg" alt="" />
+          <p>Top 50 - Haryanvi</p>
+          <a href="">Various Artists</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- artisit -->
+
+    <div class="artists-slideshow-container">
+      <h1 class="artists-title">
+        <i class="fa-solid fa-user"></i> Top Artists
+      </h1>
+      <div class="artists-slide fade">
+        <div class="artist-box">
+          <img src="images/artist1.jpeg" alt="Artist Photo" />
+          <p>A. R. Rahman</p>
+          <a href="">View Profile</a>
+        </div>
+        <div class="artist-box">
+          <img src="images/artist2.jpeg" alt="Artist Photo" />
+          <p>Karan Aujla</p>
+          <a href="">View Profile</a>
+        </div>
+        <div class="artist-box">
+          <img src="images/artist3.jpeg" alt="Artist Photo" />
+          <p>Arijit Singh</p>
+          <a href="">View Profile</a>
+        </div>
+        <div class="artist-box">
+          <img src="images/artist4.jpeg" alt="Artist Photo" />
+          <p>Sony Nigam</p>
+          <a href="">View Profile</a>
+        </div>
+      </div>
+      <div class="artists-slide fade">
+        <div class="artist-box">
+          <img src="images/artist5.jpeg" alt="Artist Photo" />
+          <p>Neha Kakkar</p>
+          <a href="">View Profile</a>
+        </div>
+        <div class="artist-box">
+          <img src="images/artist6.jpeg" alt="Artist Photo" />
+          <p>Jaani</p>
+          <a href="">View Profile</a>
+        </div>
+        <div class="artist-box">
+          <img src="images/artist7.jpeg" alt="Artist Photo" />
+          <p>Diljit Dosanjh</p>
+          <a href="">View Profile</a>
+        </div>
+        <div class="artist-box">
+          <img src="images/artist8.jpeg" alt="Artist Photo" />
+          <p>Sunidhi Chauhan</p>
+          <a href="">View Profile</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- movies -->
+
+    <div class="movies-slideshow-container" id="movies">
+      <h1 class="movies-title"><i class="fa-solid fa-film"></i> Top Movies</h1>
+      <div class="movies-slide fade">
+        <div class="movie-box">
+          <img src="images/movie1.jpeg" alt="" />
+          <p>Shershaah</p>
+          <a href="">Sidharth Malhotra</a>
+        </div>
+        <div class="movie-box">
+          <img src="images/movie2.jpeg" alt="" />
+          <p>Radhe</p>
+          <a href="">Salman Khan</a>
+        </div>
+        <div class="movie-box">
+          <img src="images/movie3.jpeg" alt="" />
+          <p>Sooryavanshi</p>
+          <a href="">Akshay Kumar</a>
+        </div>
+        <div class="movie-box">
+          <img src="images/movie4.jpeg" alt="" />
+          <p>83</p>
+          <a href="">Ranveer Singh</a>
+        </div>
+      </div>
+      <div class="movies-slide fade">
+        <div class="movie-box">
+          <img src="images/movie5.jpeg" alt="" />
+          <p>Laal Singh Chaddha</p>
+          <a href="">Aamir Khan</a>
+        </div>
+        <div class="movie-box">
+          <img src="images/movie6.jpeg" alt="" />
+          <p>RRR</p>
+          <a href="">N. T. Rama Rao Jr.</a>
+        </div>
+        <div class="movie-box">
+          <img src="images/movie7.jpeg" alt="" />
+          <p>Pushpa</p>
+          <a href="">Allu Arjun</a>
+        </div>
+        <div class="movie-box">
+          <img src="images/movie8.jpeg" alt="" />
+          <p>Jersey</p>
+          <a href="">Shahid Kapoor</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- map -->
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27495.924644126597!2d76.6586581!3d30.521305449999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fc32344a6e2d7%3A0x81b346dee91799ca!2sChitkara%20University!5e0!3m2!1sen!2sin!4v1722867970354!5m2!1sen!2sin"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <div class="footer" id="about">
+      <div>
+        <p id="f-menu">Beat - Melodies</p>
+        <p id="follow">
+          Follow us to get instant updates <br />
+          of new tracks and shows
+        </p>
+        <div class="icons">
+          <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="contact">
+        <h1>Contact - Info</h1>
+        <p><i class="fa-solid fa-phone"></i>+91 - 9896897266</p>
+        <p><i class="fa-solid fa-phone"></i>+91 - 9896597266</p>
+        <p><i class="fa-solid fa-envelope"></i>beatmelofficial@gmail.com</p>
+        <p><i class="fa-solid fa-location-dot"></i>Rajpura , India - 140401</p>
+      </div>
+      <div class="access">
+        <h1>Quick - Access</h1>
+        <a href="">Home</a>
+        <a href="">Songs</a>
+        <a href="">Movies</a>
+        <a href="">Web Series</a>
+        <a href="">Anime</a>
+        <a href="">Comics</a>
+        <a href="">About</a>
+      </div>
+      <div class="company">
+        <h1>Company - Info</h1>
+        <p>
+          Beat - Melodies is a music and video streaming service that allows you
+          to listen to music from various genres and watch movies and web
+          series.
+        </p>
+      </div>
+      <div class="copy">
+        <p>&copy; 2024 Beat - Melodies</p>
+      </div>
+    </div>
+
+    <!-- script -->
+    <script src="script.js"></script>
+  </body>
+</html>
