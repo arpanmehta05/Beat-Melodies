@@ -352,7 +352,12 @@ img {
   text-align: center;
 }
 
-.song-box:hover ,.artist-box:hover,.playlist-box:hover,.movie-box:hover,.series-box:hover,.anime-box:hover {
+.song-box:hover,
+.artist-box:hover,
+.playlist-box:hover,
+.movie-box:hover,
+.series-box:hover,
+.anime-box:hover {
   cursor: pointer;
 }
 
@@ -454,138 +459,33 @@ img {
   color: var(--link-hover-color);
 }
 
-.dot-artist {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #fff;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.dot-artist.active,
-.dot-artist:hover {
-  background-color: var(--primary-color);
-}
-
-.movies-slideshow-container {
-  margin: 10% 0 0 0 !important;
-  background-color: var(--muted-bg);
-  position: relative;
-  margin: auto;
-  max-width: 100%;
-  padding: 20px 8%;
-}
-
-.movies-title {
-  color: var(--primary-color);
-  text-align: center;
-}
-
-.movies-slide {
-  display: none;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.movie-box {
-  background-color: var(--background-color);
-  color: var(--muted-text-color);
-  padding: 20px;
-  margin: 10px;
-  border-radius: 10px;
-  width: 22%;
-  text-align: center;
-}
-
-.movie-box img {
-  border-radius: 10px;
-  width: 90%;
-  height: 80%;
-}
-
-.movie-box p {
-  margin-top: 10px;
-  font-size: 18px;
-}
-
-.webseries-slideshow-container {
-  background-color: var(--muted-bg);
-  position: relative;
-  margin: auto;
-  max-width: 100%;
-  padding: 20px 8%;
-}
-
-.webseries-title {
-  color: var(--primary-color);
-  text-align: center;
-}
-
 .song-box:hover,
 .playlist-box:hover,
 .artist-box:hover,
-.movie-box:hover,
-.series-box:hover,
 .anime-box:hover {
   transform: scale(1.1);
   transition: 0.2s ease;
 }
 
-.series-slide {
-  display: none;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.series-box {
-  background-color: var(--background-color);
-  color: var(--muted-text-color);
-  padding: 20px;
-  margin: 10px;
-  border-radius: 10px;
-  width: 22%;
-  text-align: center;
-}
-
-.series-box img {
-  border-radius: 10px;
-  width: 90%;
-  height: 80%;
-}
-
-.series-box p {
-  margin-top: 10px;
-  font-size: 18px;
-}
-
 @media only screen and (max-width: 768px) {
-  .series-box , .anime-box ,.movie-box ,.artist-box ,.playlist-box ,.song-box{
+  .anime-box,
+  .artist-box,
+  .playlist-box,
+  .song-box {
     width: 45%;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .series-box ,.anime-box ,.movie-box ,.artist-box ,.playlist-box ,.song-box{
+  .anime-box,
+  .artist-box,
+  .playlist-box,
+  .song-box {
     width: 100%;
   }
 }
 
-.series-box a {
-  margin-top: 10px;
-  color: var(--link-color);
-}
-
-.series-box a:hover {
-  color: var(--link-hover-color);
-}
-
-.anime-slide-container
-{
+.anime-slide-container {
   margin-top: 10% !important;
   background-color: var(--muted-bg);
   position: relative;
@@ -594,12 +494,12 @@ img {
   padding: 20px 8%;
 }
 
-.anime-title{
+.anime-title {
   color: var(--primary-color);
   text-align: center;
 }
 
-.anime-slide{
+.anime-slide {
   display: none;
   display: flex;
   justify-content: space-around;
@@ -625,4 +525,111 @@ img {
 .anime-box p {
   margin-top: 10px;
   font-size: 18px;
+}
+
+.movies {
+  width: 100%;
+  padding: 20px;
+  padding-right: 8%;
+  margin-top: 10% !important;
+  background-color: var(--muted-bg);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.movies-box {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  width: 97%;
+  margin: 3% 5%;
+  height: 50vh;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.movies-box img {
+  border-radius: 10px;
+  height: 80%;
+  max-width: 40%;
+  margin: 10px;
+}
+
+.movies-box.left {
+  flex-direction: row;
+}
+
+.movies-box.right {
+  flex-direction: row-reverse;
+}
+
+.line {
+  background-color: var(--primary-color);
+  width: 10px;
+  margin: 10px;
+  height: 90%;
+  transition: width 0.2s ease;
+}
+
+.movies-box:hover .line {
+  width: 20px;
+  margin: 15px;
+}
+
+.movies-box:hover {
+  cursor: pointer;
+  transition: 0.5s ease;
+  transform: scale(1.05);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.details h1 {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.btn {
+  margin: 70px auto 0;
+  text-align: center;
+}
+
+.btn a {
+  width: 150px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 12px 0;
+  color: var(--primary-color);
+  border: 0.5px solid var(--primary-color);
+  position: relative;
+  transition: color 0.5s;
+  z-index: 1;
+}
+
+.btn a span {
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.btn a:hover span {
+  width: 100%;
+}
+
+.movies-box h4
+{
+  font-weight: 600;
 }

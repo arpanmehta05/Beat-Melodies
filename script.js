@@ -97,20 +97,3 @@ function showSongsSlides(n) {
 //   slides[artistSlideIndex - 1].style.display = "flex";
 //   dots[artistSlideIndex - 1].className += " active";
 // }
-
-// let movieSlideIndex = 0;
-// showMovieSlides();
-
-// function showMovieSlides() {
-//   let i;
-//   const slides = document.getElementsByClassName("movies-slide");
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";
-//   }
-//   movieSlideIndex++;
-//   if (movieSlideIndex > slides.length) {
-//     movieSlideIndex = 1;
-//   }
-//   slides[movieSlideIndex - 1].style.display = "block";
-//   setTimeout(showMovieSlides, 4000); // Change slide every 4 seconds
-// }
