@@ -352,22 +352,8 @@ img {
   text-align: center;
 }
 
-.song-box:hover {
+.song-box:hover ,.artist-box:hover,.playlist-box:hover,.movie-box:hover,.series-box:hover,.anime-box:hover {
   cursor: pointer;
-}
-
-@media only screen and (max-width: 768px) {
-  .song-box,
-  .playlist-box {
-    width: 45%;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .song-box,
-  .playlist-box {
-    width: 100%;
-  }
 }
 
 .song-box img {
@@ -468,18 +454,6 @@ img {
   color: var(--link-hover-color);
 }
 
-@media only screen and (max-width: 768px) {
-  .artist-box {
-    width: 45%;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .artist-box {
-    width: 100%;
-  }
-}
-
 .dot-artist {
   cursor: pointer;
   height: 15px;
@@ -538,18 +512,6 @@ img {
   font-size: 18px;
 }
 
-@media only screen and (max-width: 768px) {
-  .movie-box {
-    width: 45%;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .movie-box {
-    width: 100%;
-  }
-}
-
 .webseries-slideshow-container {
   background-color: var(--muted-bg);
   position: relative;
@@ -567,7 +529,8 @@ img {
 .playlist-box:hover,
 .artist-box:hover,
 .movie-box:hover,
-.series-box:hover {
+.series-box:hover,
+.anime-box:hover {
   transform: scale(1.1);
   transition: 0.2s ease;
 }
@@ -601,13 +564,13 @@ img {
 }
 
 @media only screen and (max-width: 768px) {
-  .series-box {
+  .series-box , .anime-box ,.movie-box ,.artist-box ,.playlist-box ,.song-box{
     width: 45%;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .series-box {
+  .series-box ,.anime-box ,.movie-box ,.artist-box ,.playlist-box ,.song-box{
     width: 100%;
   }
 }
@@ -619,4 +582,47 @@ img {
 
 .series-box a:hover {
   color: var(--link-hover-color);
+}
+
+.anime-slide-container
+{
+  margin-top: 10% !important;
+  background-color: var(--muted-bg);
+  position: relative;
+  margin: auto;
+  max-width: 100%;
+  padding: 20px 8%;
+}
+
+.anime-title{
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.anime-slide{
+  display: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.anime-box {
+  background-color: var(--background-color);
+  color: var(--muted-text-color);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 22%;
+  text-align: center;
+}
+
+.anime-box img {
+  border-radius: 10px;
+  width: 90%;
+  height: 80%;
+}
+
+.anime-box p {
+  margin-top: 10px;
+  font-size: 18px;
 }
