@@ -612,3 +612,11 @@ img {
   }
 }
 
+.series-box a {
+  margin-top: 10px;
+  color: var(--link-color);
+}
+
+.series-box a:hover {
+  color: var(--link-hover-color);
+}
