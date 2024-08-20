@@ -160,8 +160,7 @@ body {
 
 .contact {
   margin-top: 24px;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
   display: flex;
   flex-direction: column;
 }
@@ -179,7 +178,7 @@ body {
   cursor: pointer;
 }
 
-.contact .fa-solid {
+.contact .fa-solid , .access .fa-solid {
   font-size: 20px;
   margin-right: 10px;
   color: var(--primary-color);
@@ -200,8 +199,7 @@ body {
 
 .access {
   margin-top: 24px;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
   display: flex;
   flex-direction: column;
 }
