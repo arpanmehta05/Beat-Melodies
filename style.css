@@ -478,6 +478,7 @@ img {
 }
 
 .movies-box img {
+  -webkit-object-fit: cover;
   object-fit: cover;
   border-radius: 10px;
   height: 80%;
