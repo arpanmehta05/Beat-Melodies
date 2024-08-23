@@ -15,9 +15,7 @@
   </head>
   <body>
     <div class="navbar">
-      <div class="logo" id="logo">
-        <p id="menu">Beat - Melodies</p>
-      </div>
+      <img src="images/logo-no-background.png" alt="" class="logo" id="logo">
       <div class="elemets" id="ele">
         <a href="#home" class="scroll">Home</a>
         <a href="#songs" class="scroll">Songs</a>
@@ -34,7 +32,7 @@
       <div class="slide fade">
         <img
           src="images/banner1.png"
-          style="width: 100%"
+          class="banner-img"
           alt="Banner Image"
           title="Banner"
         />
@@ -42,15 +40,15 @@
       <div class="slide fade">
         <img
           src="images/banner2.png"
-          style="width: 100%"
+          class="banner-img"
           alt="Banner Image"
           title="Banner"
         />
       </div>
       <div class="slide fade">
         <img
-          src="images/banner1.png"
-          style="width: 100%"
+          src="images/banner3.png"
+          class="banner-img"
           alt="Banner Image"
           title="Banner"
         />
@@ -58,13 +56,8 @@
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <div class="dots-container" style="text-align: center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
 
-    <!-- music -->
+   <!-- music -->
 
     <div class="songs-slideshow-container" id="songs">
       <h1 class="songs-title"><i class="fa-solid fa-music"></i> Top Tracks</h1>
@@ -221,6 +214,15 @@
         </div>
       </div>
     </div>
+
+    <!-- parallax -->
+
+    <!-- <section class="section section-freelancing">
+      <div class="overlay"></div>
+      <div class="container">
+      </div>
+   </section> -->
+   <!-- parallax -->
 
     <!-- movies adn webseries -->
 
@@ -504,8 +506,8 @@
     </div>
 
     <div class="footer" id="about">
-      <div>
-        <p id="f-menu">Beat - Melodies</p>
+      <div class="logo-f">
+        <img src="images/logo-no-background.png" alt="" id="f-logo">
         <p id="follow">
           Follow us to get instant updates <br />
           of new tracks and shows

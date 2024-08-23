@@ -11,32 +11,6 @@ menubtn.onclick = function () {
     }
 };
 
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    let slides = document.getElementsByClassName("slide");
-    let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) { slideIndex = 1; }
-    if (n < 1) { slideIndex = slides.length; }
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (let i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-}
-
 document.querySelectorAll('.scroll').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -59,15 +33,46 @@ function currentSongsSlide(n) {
 
 function showSongsSlides(n) {
     let slides = document.getElementsByClassName("songs-slide");
-    let dots = document.getElementsByClassName("dot-song");
     if (n > slides.length) { songSlideIndex = 1; }
     if (n < 1) { songSlideIndex = slides.length; }
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-    for (let i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
     slides[songSlideIndex - 1].style.display = "flex";
-    dots[songSlideIndex - 1].className += " active";
 }
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+    let slides = document.getElementsByClassName("slide");
+    if (n > slides.length) { slideIndex = 1; }
+    if (n < 1) { slideIndex = slides.length; }
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slides[slideIndex - 1].style.display = "block";  
+}
+
+
+let artistSlideIndex = 1;
+showArtistSlides(artistSlideIndex);
+function plusArtistSlides(n) {
+    showArtistSlides(artistSlideIndex += n);
+}
+function showArtistSlides(n) {
+    let slides = document.getElementsByClassName("artists-slide");
+    if (n > slides.length) { artistSlideIndex = 1; }
+    if (n < 1) { artistSlideIndex = slides.length; }
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slides[artistSlideIndex - 1].style.display = "flex";  
+}
+setInterval(function() {
+    plusArtistSlides(1);
+}, 5000);
