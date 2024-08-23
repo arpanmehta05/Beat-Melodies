@@ -71,29 +71,3 @@ function showSongsSlides(n) {
     slides[songSlideIndex - 1].style.display = "flex";
     dots[songSlideIndex - 1].className += " active";
 }
-
-// let artistSlideIndex = 1;
-// showArtistsSlides(artistSlideIndex);
-
-// function plusArtistsSlides(n) {
-//   showArtistsSlides(artistSlideIndex += n);
-// }
-
-// function currentArtistsSlide(n) {
-//   showArtistsSlides(artistSlideIndex = n);
-// }
-
-// function showArtistsSlides(n) {
-//   let slides = document.getElementsByClassName("artists-slide");
-//   let dots = document.getElementsByClassName("dot-artist");
-//   if (n > slides.length) { artistSlideIndex = 1 }
-//   if (n < 1) { artistSlideIndex = slides.length }
-//   for (let i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";
-//   }
-//   for (let i = 0; i < dots.length; i++) {
-//     dots[i].className = dots[i].className.replace(" active", "");
-//   }
-//   slides[artistSlideIndex - 1].style.display = "flex";
-//   dots[artistSlideIndex - 1].className += " active";
-// }
